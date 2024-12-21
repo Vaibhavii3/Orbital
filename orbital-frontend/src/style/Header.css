@@ -1,0 +1,74 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between; /* Even spacing between logo, nav, and button */
+  align-items: center; /* Align items vertically */
+  padding: 20px 40px; /* Adjust padding */
+  background: linear-gradient(90deg, rgba(10, 15, 40, 0.8), rgba(27, 33, 69, 0.8));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px); /* Glass-like effect */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex; /* Ensures proper alignment */
+  align-items: center;
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align nav links vertically */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #4c8cff;
+  text-shadow: 0px 0px 10px rgba(76, 140, 255, 1);
+}
+
+.header-cta {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment for the button */
+}
+
+.cta-button {
+  background-color: #4c8cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(76, 140, 255, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(76, 140, 255, 1);
+}
