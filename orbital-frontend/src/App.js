@@ -1,21 +1,38 @@
-// App.js
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header"; // Import Header component
-import "./App.css"; // Optional global styles
+import "./App.css"; 
+import Hero from "./components/Hero";
+import WelcomeScreen from "./components/WelcomeScreen";
+import CommandLine from "./components/CommandLine";
 
 function App() {
+  const [stage, setStage] = useState("welcome"); // Track the current stage
+
+  const handleStart = () => {
+    setStage("cli"); // Transition to CommandLine
+  };
+
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
-        {/* <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/community" element={<div>Community Page</div>} />
-        <Route path="/blog" element={<div>Blog Page</div>} />
-        <Route path="/events" element={<div>Events Page</div>} />
-        <Route path="/resources" element={<div>Resources Page</div>} />
-        <Route path="/join" element={<div>Join Page</div>} /> */}
+
+        <Route path="/" element={<Hero />} />
+
+        <Route
+          path="/welcome"
+          element={
+            <WelcomeScreen
+              onStart={handleStart}
+              stage={stage} // Pass the stage prop
+            />
+          }
+        />
+
+        <Route
+          path="/cli"
+          element={<CommandLine />}
+        />
+        
       </Routes>
     </Router>
   );
