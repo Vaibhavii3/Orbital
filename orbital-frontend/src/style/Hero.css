@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #0a0f28, #1b2145);
+    /* background: linear-gradient(135deg, #0a0f28, #1b2145); */
+    background: linear-gradient(135deg, #000310, #000107);
     color: white;
     text-align: center;
   }
@@ -109,13 +110,12 @@
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0px 0px 15px rgba(76, 140, 255, 0.8);
+    box-shadow: 0px 0px 15px rgba(76, 140, 255, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .cta-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 25px rgba(76, 140, 255, 1);
+    box-shadow: 0px 0px 25px rgba(76, 140, 255, 0.4);
   }
   
   .cta-secondary {
