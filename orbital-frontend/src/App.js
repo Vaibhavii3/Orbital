@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import WelcomeScreen from "./components/WelcomeScreen";
 import CommandLine from "./components/CommandLine";
 import Dashboard from "./components/Dashboard";
+import ProfilePage from "./components/ProfilePage";
 
 function App() {
   const [stage, setStage] = useState("welcome"); // Track the current stage
@@ -35,6 +36,7 @@ function App() {
         />
 
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<ProfilePage />} />
         
       </Routes>
     </Router>
