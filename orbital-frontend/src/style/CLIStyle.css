@@ -6,7 +6,7 @@ body {
     color: #0f0;
     overflow: hidden;
   }
-  
+/*   
   .cli-container {
     display: flex;
     justify-content: center;
@@ -71,5 +71,64 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+  }
+   */
+
+   .cli-container {
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", monospace;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .cli-text {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .typewriter {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #0f0;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #0f0;
+    }
+  }
+  
+  .cli-input {
+    background-color: #000;
+    color: #0f0;
+    border: none;
+    border-bottom: 2px solid #0f0;
+    outline: none;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  
+  .cli-input::placeholder {
+    color: #555;
   }
   

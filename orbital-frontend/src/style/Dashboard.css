@@ -1,0 +1,79 @@
+.dashboard-container {
+    background: linear-gradient(135deg, #1b1b1b, #0f0f3e);
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+  
+  .dashboard-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+    color: #ff9800;
+  }
+  
+  .nav-item p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .dashboard-actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .dashboard-actions h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .action-btn {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background: #ff5722;
+    transform: translateY(-3px);
+  }
+  

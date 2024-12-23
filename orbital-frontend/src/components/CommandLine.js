@@ -24,6 +24,11 @@ const CommandLine = ({ onComplete }) => {
 
   return (
     <div className="cli-container">
+      {questions.slice(0, step).map((q, index) => (
+        <p key={index}>
+          <span style={{ color: "#0f0" }}>{q.question}</span> {formData[q.key]}
+        </p>
+      ))}
       <div className="cli-text">
         <p className="typewriter">{questions[step].question}</p>
         <input

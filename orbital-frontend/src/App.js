@@ -4,6 +4,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import WelcomeScreen from "./components/WelcomeScreen";
 import CommandLine from "./components/CommandLine";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   const [stage, setStage] = useState("welcome"); // Track the current stage
@@ -32,6 +33,8 @@ function App() {
           path="/cli"
           element={<CommandLine />}
         />
+
+        <Route path="/dashboard" element={<Dashboard />} />
         
       </Routes>
     </Router>
