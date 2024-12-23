@@ -6,6 +6,8 @@ import WelcomeScreen from "./components/WelcomeScreen";
 import CommandLine from "./components/CommandLine";
 import Dashboard from "./components/Dashboard";
 import ProfilePage from "./components/ProfilePage";
+import BlogPage from "./components/BlogPage";
+import BlogFeed from "./components/BlogFeed";
 
 function App() {
   const [stage, setStage] = useState("welcome"); // Track the current stage
@@ -37,6 +39,8 @@ function App() {
 
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blogFeed" element={<BlogFeed />} />
         
       </Routes>
     </Router>
