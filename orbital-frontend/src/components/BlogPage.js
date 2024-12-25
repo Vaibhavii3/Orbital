@@ -74,7 +74,7 @@ const styles = {
   header: {
     textAlign: "center",
     fontSize: "36px",
-    textShadow: "0 0 20px #00ff00",
+    textShadow: "0 0 5px #00ff00",
     marginBottom: "20px",
   },
   blogSection: {
@@ -88,17 +88,17 @@ const styles = {
     backgroundColor: "#1a1a1a",
     border: "2px solid #00ff00",
     borderRadius: "10px",
-    boxShadow: "0 0 20px #00ff00",
+    boxShadow: "0 0 5px #00ff00",
   },
   subHeader: {
     fontSize: "24px",
     marginBottom: "10px",
-    textShadow: "0 0 10px #00ff00",
+    textShadow: "0 0 5px #00ff00",
   },
   input: {
     width: "100%",
-    padding: "10px",
     marginBottom: "10px",
+    padding: "5px",
     backgroundColor: "#000",
     color: "#00ff00",
     border: "1px solid #00ff00",
@@ -108,7 +108,7 @@ const styles = {
   textarea: {
     width: "100%",
     height: "150px",
-    padding: "10px",
+    padding: "5px",
     backgroundColor: "#000",
     color: "#00ff00",
     border: "1px solid #00ff00",
@@ -133,7 +133,7 @@ const styles = {
     backgroundColor: "#1a1a1a",
     border: "2px solid #00ff00",
     borderRadius: "10px",
-    boxShadow: "0 0 20px #00ff00",
+    boxShadow: "0 0 5px #00ff00",
   },
   blogCard: {
     padding: "15px",
