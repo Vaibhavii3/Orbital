@@ -60,7 +60,7 @@ const styles = {
   header: {
     textAlign: "center",
     fontSize: "36px",
-    textShadow: "0 0 20px #00ff00",
+    textShadow: "0 0 5px #00ff00",
     marginBottom: "20px",
   },
   feed: {
@@ -73,12 +73,12 @@ const styles = {
     padding: "20px",
     borderRadius: "10px",
     border: "2px solid #00ff00",
-    boxShadow: "0 0 15px #00ff00",
+    boxShadow: "0 0 5px #00ff00",
   },
   blogTitle: {
     fontSize: "24px",
     marginBottom: "10px",
-    textShadow: "0 0 10px #00ff00",
+    textShadow: "0 0 5px #00ff00",
   },
   blogContent: {
     fontSize: "16px",
