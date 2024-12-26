@@ -31,6 +31,10 @@ const Dashboard = () => {
           <FaChartBar size={30} />
           <p>Analytics</p>
         </div>
+        <div className="nav-item">
+          <FaChartBar size={30} />
+          <p>Blogs</p>
+        </div>
       </div>
 
       {/* Quick Actions Section */}
